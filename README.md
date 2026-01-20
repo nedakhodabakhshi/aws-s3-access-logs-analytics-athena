@@ -36,74 +36,74 @@ The goal is to show **how to manage, audit, and analyze S3 objects** without wai
 ## Step-by-Step Configuration
 
 ### 1. S3 Buckets Created
-![All S3 Buckets](images/01-All-S3-Buckets.png)
+![All S3 Buckets](screenshots/images/01-All-S3-Buckets.png)
 
 ---
 
 ### 2. Server Access Logging (Raw Bucket)
-![Raw Logging Enabled](images/02-raw-server-access-logging-enabled.png)
+![Raw Logging Enabled](screenshots/images/02-raw-server-access-logging-enabled.png)
 
 ---
 
 ### 3. Raw Bucket Folder Structure
-![Raw Folders](images/03-raw-folders-created.png)
+![Raw Folders](screenshots/images/03-raw-folders-created.png)
 
 ---
 
 ### 4. Server Access Logging (Processed Bucket)
-![Processed Logging Enabled](images/04-processed-server-access-logging-enabled.png)
+![Processed Logging Enabled](screenshots/images/04-processed-server-access-logging-enabled.png)
 
 ---
 
 ### 5. Versioning Enabled (Raw Bucket)
-![Raw Versioning](images/05-raw-versioning-enabled.png)
+![Raw Versioning](screenshots/images/05-raw-versioning-enabled.png)
 
 ---
 
 ### 6. Versioning Enabled (Processed Bucket)
-![Processed Versioning](images/06-processed-versioning-enabled.png)
+![Processed Versioning](screenshots/images/06-processed-versioning-enabled.png)
 
 ---
 
 ### 7. Multiple Object Versions (Raw Bucket)
-![Multiple Versions](images/07-raw-versioning-multiple-versions.png)
+![Multiple Versions](screenshots/images/07-raw-versioning-multiple-versions.png)
 
 ---
 
 ### 8. Enforce HTTPS Only (Raw Bucket Policy)
-![Raw HTTPS Policy](images/08-raw-bucket-policy-https-only.png)
+![Raw HTTPS Policy](screenshots/images/08-raw-bucket-policy-https-only.png)
 
 ---
 
 ### 9. Enforce HTTPS Only (Processed Bucket Policy)
-![Processed HTTPS Policy](images/09-processed-bucket-policy-https-only.png)
+![Processed HTTPS Policy](screenshots/images/09-processed-bucket-policy-https-only.png)
 
 ---
 
 ### 10. Lifecycle Rule – Raw Bucket
-![Raw Lifecycle Rule](images/11-raw-lifecycle-rule.png)
+![Raw Lifecycle Rule](screenshots/images/11-raw-lifecycle-rule.png)
 
 ---
 
 ### 11. Lifecycle Rule – Processed Bucket
-![Processed Lifecycle Rule](images/12-processed-lifecycle-rule.png)
+![Processed Lifecycle Rule](screenshots/images/12-processed-lifecycle-rule.png)
 
 ---
 
 ### 12. S3 Inventory Configuration – Raw Bucket
-![Raw Inventory](images/13-raw-s3-inventory-config.png)
+![Raw Inventory](screenshots/images/13-raw-s3-inventory-config.png)
 
 ---
 
 ### 13. S3 Inventory Configuration – Processed Bucket
-![Processed Inventory](images/14-processed-s3-inventory-config.png)
+![Processed Inventory](screenshots/images/14-processed-s3-inventory-config.png)
 
 ---
 
 ## Athena Integration
 
 ### 14. Athena Query Results Location
-![Athena Results Location](images/15-athena-query-results-location.png)
+![Athena Results Location](screenshots/images/15-athena-query-results-location.png)
 
 ---
 
@@ -111,7 +111,7 @@ The goal is to show **how to manage, audit, and analyze S3 objects** without wai
 ```sql
 CREATE DATABASE s3cap_inventory;
 ```
-![Create Database](images/16-athena-create-database.png)
+![Create Database](screenshots/images/16-athena-create-database.png)
 
 ---
 
@@ -134,12 +134,12 @@ WITH SERDEPROPERTIES (
   'quoteChar' = '"'
 );
 ```
-![Create Inventory Table](images/17-athena-create-inventory-table.png)
+![Create Inventory Table](screenshots/images/17-athena-create-inventory-table.png)
 
 ---
 
 ### 17. Athena Query Results Stored in S3
-![Athena Results in S3](images/18-athena-query-results-s3.png)
+![Athena Results in S3](screenshots/images/18-athena-query-results-s3.png)
 
 ---
 
