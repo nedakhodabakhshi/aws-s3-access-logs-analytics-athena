@@ -164,6 +164,3 @@ This query provides a **quick storage-class distribution** without scanning larg
 
 ---
 
-## Status
-Project setup complete and production-ready.
-
